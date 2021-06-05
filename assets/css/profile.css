@@ -20,7 +20,7 @@ html {
     src: url(/static/fonts/AquireLight.otf);
 }
 
-.letter-O {
+.ball {
     top: 50%;
     left: 110%;
     transform: translate(-50%, -50%);
@@ -29,38 +29,49 @@ html {
     height: 30%;
     border-radius: 50%;
     background: black;
-    background: radial-gradient(circle at 50px 50px, #5cabff, #000);
+    background: radial-gradient(circle at 50px 50px, #c3defc, #000);
 }
 
-.ball {
-    width: 20%;
-    height: 30%;
-    border-radius: 50%;
-    display: block;
-    background: white;
+.letter-O {
+    font-size: .7em;
     animation: animate 2s linear  infinite;
     transform: translatex(55px);
+    margin-top: 15%;
+    margin-left: 20%;
+    color: rgb(0, 0, 0);
 }
 
 @keyframes animate {
-    0%, 20% {
+    0% {
         transform: none;
     }
-    20%, 24% {
-        transform: none;
-        /* transform: translateX(-68px) translateY(0px) skewX(5deg) skewY(-10deg) scale(0.95); */
+    20%, 30% {
+        /* transform: translateX(-120px) translateY(0px) skewX(5deg) skewY(-10deg) scale(0.95); */
+        transform: translateX(-30px) translateY(0px) skewX(5deg) skewY(-3deg) scale(.95) ;
     }
-    25%, 44% {
+    40%, 45% {
         transform: none;
     }
     50%, 60% {
-        transform: translateX(120px) translateY(0px) skewX(5deg) skewY(2deg) scaleX(0.95);
+        /* transform: translateX(30px) translateY(0px) skewX(5deg) skewY(2deg) scaleX(0.95); */
+        transform: translateX(30px) translateY(0px) skewX(-5deg) skewY(3deg) scaleX(0.95);
     }
     66%, 100% {
         transform: none;
     }
 }
 
+.eye-ball{
+    width: 20%;
+    height: 40%;
+    border-radius: 50%;
+    display: block;
+    background: radial-gradient(circle at 50px 50px, #caa052, #000);
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+}
 
 .side-bar{
     height: 100%;
