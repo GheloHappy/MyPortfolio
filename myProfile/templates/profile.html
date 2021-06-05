@@ -3,6 +3,7 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Ghelonico Maligaya</title>
         <meta name="description" content="">
@@ -10,7 +11,18 @@
         <link rel="stylesheet" href="{% static 'css/profile.css'%}">
     </head>
     <body>
-        
-        <script src="" async defer></script>
+        <div class='side-bar' id='sideBar' onmouseover='toggleSidebar()' onmouseout='toggleSidebar()'>
+            <a href="#"><span><i class="material-icons">info</i><span class="icon-text">&nbsp;&nbsp;&nbsp;&nbsp;about</span></a><br>
+            <a href="#"><span><i class="material-icons">info</i><span class="icon-text">&nbsp;&nbsp;&nbsp;&nbsp;about</span></a><br>   
+        </div>
+        <div class='fName'> 
+            <p>Ghelonic</p>
+            <div class='letter-O'>
+                <div class='ball'>GG</div>
+            </div>
+        </div>
+
+
+        <script type="text/javascript" src="{% static 'js/profile.js'%}"></script>
     </body>
 </html>

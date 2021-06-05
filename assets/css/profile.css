@@ -1,0 +1,76 @@
+html {
+    background: rgb(216, 186, 233);
+    margin: auto;
+    padding: 0;
+}
+
+.fName{
+    font-size: 10em;
+    font-weight: 100;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    color: rgb(4, 33, 44);
+    font-family: fontName;
+}
+
+@font-face {
+    font-family: fontName;
+    src: url(/static/fonts/AquireLight.otf);
+}
+
+.letter-O {
+    top: 50%;
+    left: 110%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 20%;
+    height: 30%;
+    border-radius: 50%;
+    background: black;
+    background: radial-gradient(circle at 50px 50px, #5cabff, #000);
+}
+
+.ball {
+    width: 20%;
+    height: 30%;
+    border-radius: 50%;
+    display: block;
+    background: white;
+    animation: animate 2s linear  infinite;
+    transform: translatex(55px);
+}
+
+@keyframes animate {
+    0%, 20% {
+        transform: none;
+    }
+    20%, 24% {
+        transform: none;
+        /* transform: translateX(-68px) translateY(0px) skewX(5deg) skewY(-10deg) scale(0.95); */
+    }
+    25%, 44% {
+        transform: none;
+    }
+    50%, 60% {
+        transform: translateX(120px) translateY(0px) skewX(5deg) skewY(2deg) scaleX(0.95);
+    }
+    66%, 100% {
+        transform: none;
+    }
+}
+
+
+.side-bar{
+    height: 100%;
+    width: 5%;
+    background: rgb(4, 33, 44);
+    float: left;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    opacity: 0.8;
+    transition: 0.5s;
+    display: block;
+}
