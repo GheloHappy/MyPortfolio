@@ -28,8 +28,7 @@ html {
     width: 20%;
     height: 30%;
     border-radius: 50%;
-    background: black;
-    background: radial-gradient(circle at 50px 50px, #c3defc, #000);
+    background: radial-gradient(#7cb9ff, rgba(132, 113, 238, 0.432));
 }
 
 .letter-O {
