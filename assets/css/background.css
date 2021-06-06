@@ -11,7 +11,7 @@
     height: 20%;
     position: absolute;
     top: 0%;
-    left: 32%;
+    left: 5%;
     transform: translate(-50%, -50%);
 }
 
@@ -64,7 +64,7 @@
 }
 #b{
     margin-left: 5%;
-    animation: fall 8s linear  infinite;
+    animation: fall 3s linear  infinite;
 }
 #c{
     margin-left: 10%;
@@ -75,24 +75,24 @@
     animation: fall 6s linear  infinite;
 }
 #e{
-    margin-left: 20%;
+    margin-left: 65%;
     animation: fall 5s linear  infinite;
 }
 #f{
-    margin-left: 25%;
+    margin-left: 70%;
     animation: fall 4s linear  infinite;
 }
 #g{
-    margin-left: 30%;
-    animation: fall 3s linear  infinite;
+    margin-left: 75%;
+    animation: fall 8s linear  infinite;
 }
 #h{
-    margin-left: 35%;
+    margin-left: 80%;
     animation: fall 2s linear  infinite;
 }
 #i{
-    margin-left: 40%;
-    animation: fall 2s linear  infinite;
+    margin-left: 85%;
+    animation: fall 10s linear  infinite;
 }
 
 
