@@ -34,10 +34,9 @@ body{
     background: radial-gradient(#7cb9ff, rgba(132, 113, 238, 0.432));
 }
 
-.ball:hover + .lightning {
+/* .ball:hover {
     animation: flicker 4s linear infinite;
-    display: block;
-}
+} */
 
 @keyframes flicker {
     0%{

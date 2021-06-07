@@ -43,7 +43,6 @@
     border-radius: 40%;
     border-style: solid none;
     border-color: rgb(22, 22, 22);
-    opacity: .8;
     box-shadow: 0px 0px 20px rgb(49, 27, 27); ;
 }
 
@@ -95,16 +94,27 @@
 }
 
 /* Lightning */
-.lightning{
-    width: 40%;
-    height: 100%;
-    margin-left: 35%;
+.lightning {
+    max-width: 40vw;
+    height: auto;
+    width: 100%;
+    margin-left: 40vw;
+    margin-top: 20vh;
     display: none;
+    position: absolute;
+    animation: flicker 4s linear infinite;
 }
 
-.top-light{
+/* .lightning{
+    width: 40%;
+    height: 100%;
+    margin-left: 50%;
+} */
+
+/* .top-light{
+    margin-top: 20%;
     width: 4vw;
-    height: 30vh;
+    height: 25vh;
     background: rgb(255, 255, 255);
 }
 
@@ -113,9 +123,37 @@
     position: relative;
     bottom: 10vh;
     border-top: 50vh solid rgb(252, 252, 252);
-    border-right: 5vw solid transparent;
-    border-left: 1vw solid transparent;
+
+    transform: translate(skew(-20deg));
+} */
+
+@keyframes flicker {
+    0%{
+        opacity: 1;
+    }
+    10%{
+        opacity: 0;
+    }
+    11%{
+        opacity: 1;
+    }
+    14%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 0;
+    }
+    21%{
+        opacity: 1;
+    }
+    24% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
+
 
 /* UFO */
 .ufo{

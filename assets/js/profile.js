@@ -1,19 +1,20 @@
 var toggle = true;
 var toggleBG = true;
 
-$(".lightning").hide();
-
 function changeBG() {
     if (toggleBG){
         document.body.style.backgroundColor = "magenta";
         document.getElementById("name").style.color = "#105bfd";
         document.getElementById("ball").style.backgroundColor = "red";
+        document.getElementById("lightning").style.display = "block";
+        document.getElementById("lightning").style.position = "absolute";
         this.toggleBG = false;
     } else {
         document.getElementById("name").style.color = "rgb(4, 33, 44)";
         document.body.style.backgroundColor = "rgb(194, 117, 117)";
         document.getElementById("ball").style.backgroundColor = "radial-gradient(#7cb9ff, rgba(132, 113, 238, 0.432))";
-        this.toggleBG = true;    
+        document.getElementById("lightning").style.display = "none";
+        this.toggleBG = true;
     }
 }
 
