@@ -1,11 +1,13 @@
 body{
-    background: rgb(245, 239, 245);
+    background: rgb(194, 117, 117);
     margin: auto;
     padding: 0;
+    height: 100%;
+    width: 100%;   
 }
 
 .fName{
-    font-size: 10em;
+    font-size: 10vw;
     font-weight: 100;
     top: 50%;
     left: 50%;
@@ -20,6 +22,7 @@ body{
     src: url(/static/fonts/AquireLight.otf);
 }
 
+/* Eye Ball property */
 .ball {
     top: 50%;
     left: 110%;
@@ -29,6 +32,38 @@ body{
     height: 30%;
     border-radius: 50%;
     background: radial-gradient(#7cb9ff, rgba(132, 113, 238, 0.432));
+}
+
+.ball:hover + .lightning {
+    animation: flicker 4s linear infinite;
+    display: block;
+}
+
+@keyframes flicker {
+    0%{
+        opacity: 1;
+    }
+    10%{
+        opacity: 0;
+    }
+    11%{
+        opacity: 1;
+    }
+    14%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 0;
+    }
+    21%{
+        opacity: 1;
+    }
+    24% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 .letter-O {
@@ -46,14 +81,14 @@ body{
     }
     20%, 30% {
         /* transform: translateX(-120px) translateY(0px) skewX(5deg) skewY(-10deg) scale(0.95); */
-        transform: translateX(-30px) translateY(0px) skewX(5deg) skewY(-3deg) scale(.95) ;
+        transform: translateX(-30%) translateY(0px) skewX(5deg) skewY(-3deg) scale(.95) ;
     }
     40%, 45% {
         transform: none;
     }
     50%, 60% {
         /* transform: translateX(30px) translateY(0px) skewX(5deg) skewY(2deg) scaleX(0.95); */
-        transform: translateX(30px) translateY(0px) skewX(-5deg) skewY(3deg) scaleX(0.95);
+        transform: translateX(30%) translateY(0px) skewX(-5deg) skewY(3deg) scaleX(0.95);
     }
     66%, 100% {
         transform: none;
@@ -72,9 +107,10 @@ body{
     transform: translate(-50%, -50%);
 }
 
+/* Side Bar */
 .side-bar{
     height: 100%;
-    width: 5%;
+    width: 5vw;
     background: rgb(4, 33, 44);
     float: left;
     position: fixed;

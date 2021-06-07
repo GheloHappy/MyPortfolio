@@ -12,76 +12,79 @@
         <link rel="stylesheet" href="{% static 'css/background.css'%}">
     </head>
     <body>
-        <div class='side-bar' id='sideBar' onmouseover='toggleSidebar()' onmouseout='toggleSidebar()'>
-            <a href="#"><span><i class="material-icons">info</i><span class="icon-text">&nbsp;&nbsp;&nbsp;&nbsp;about</span></a><br>
-            <a href="#"><span><i class="material-icons">info</i><span class="icon-text">&nbsp;&nbsp;&nbsp;&nbsp;about</span></a><br>   
-        </div>
-        <div class='background'>
-            <div class='ufo' id='a'>
-                <div class='round'></div>
-                <div class='stand'></div>
-                <div class='head'></div>
-                <div class='rstand'></div>
-            </div>
-            <div class='ufo' id='b'>
-                <div class='round'></div>
-                <div class='stand'></div>
-                <div class='head'></div>
-                <div class='rstand'></div>
-            </div>
-            <div class='ufo' id='c'>
-                <div class='round'></div>
-                <div class='stand'></div>
-                <div class='head'></div>
-                <div class='rstand'></div>
-            </div>
-            <div class='ufo' id='d'>
-                <div class='round'></div>
-                <div class='stand'></div>
-                <div class='head'></div>
-                <div class='rstand'></div>
-            </div>
-            <div class='ufo' id='e'>
-                <div class='round'></div>
-                <div class='stand'></div>
-                <div class='head'></div>
-                <div class='rstand'></div>
-            </div>
-            <div class='ufo' id='f'>
-                <div class='round'></div>
-                <div class='stand'></div>
-                <div class='head'></div>
-                <div class='rstand'></div>
-            </div>
-            <div class='ufo' id='g'>
-                <div class='round'></div>
-                <div class='stand'></div>
-                <div class='head'></div>
-                <div class='rstand'></div>
-            </div>
-            <div class='ufo' id='h'>
-                <div class='round'></div>
-                <div class='stand'></div>
-                <div class='head'></div>
-                <div class='rstand'></div>
-            </div>
-            <div class='ufo' id='i'>
-                <div class='round'></div>
-                <div class='stand'></div>
-                <div class='head'></div>
-                <div class='rstand'></div>
-            </div>
-            <div class='cloud'>
-            {% comment %} start cloud effects planning to add lightning{% endcomment %}
-            </div>
-        </div>
-        <div class='fName'> 
-            <p id="name">Ghelonic</p>
-            <div class='ball'>
-                <div class='letter-O' onmouseover='changeBG()' onmouseout='changeBG()'>O
-                    <div class='eye-ball'></div>
+        <div class='background' id='background'>
+            <div class='ufo-container-left'>
+                <div class='ufo' id='a'>
+                    <div class='round'></div>
+                    <div class='head'></div>
+                </div>
+                <div class='ufo' id='b'>
+                    <div class='round'></div>
+                    <div class='head'></div>
+                </div>
+                <div class='ufo' id='c'>
+                    <div class='round'></div>
+                    <div class='head'></div>
+                </div>
+                <div class='ufo' id='d'>
+                    <div class='round'></div>
+                    <div class='head'></div>
+                </div>
+                <div class='clouds'>
+                    <div class='base'>
+                        <div class='c-left'></div>
+                        <div class='c-right'></div>
+                    </div>
                 </div>
             </div>
+            <div class='center-container'>
+                <div class='clouds'>
+                    <div class='base'>
+                        <div class='c-left'></div>
+                        <div class='c-right'></div>
+                    </div>
+                </div>
+                <div class='lightning'>
+                    <div class='top-light'></div>
+                    <div class='bot-light'></div>
+                </div>
+            </div>
+            <div class='ufo-container-right'>
+                <div class='ufo' id='e'>
+                    <div class='round'></div>
+                    <div class='head'></div>
+                </div>
+                <div class='ufo' id='f'>
+                    <div class='round'></div>
+                    <div class='head'></div>
+                </div>
+                <div class='ufo' id='g'>
+                    <div class='round'></div>
+                    <div class='head'></div>
+                </div>
+                <div class='ufo' id='h'>
+                    <div class='round'></div>
+                    <div class='head'></div>
+                </div>
+                <div class='clouds'>
+                    <div class='base'>
+                        <div class='c-left'></div>
+                        <div class='c-right'></div>
+                    </div>
+                </div>  
+            </div>
+            <div class='fName'> 
+                 <p id="name">Ghelonic</p>
+                <div class='ball' id='ball' onmouseover='changeBG()' onmouseout='changeBG()'>
+                    <div class='letter-O'>O
+                        <div class='eye-ball'></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='side-bar' id='sideBar' onmouseover='toggleSidebar()' onmouseout='toggleSidebar()'>
+            {% comment %} <a href="#"><span><i class="material-icons">info</i><span class="icon-text">&nbsp;&nbsp;&nbsp;&nbsp;about</span></a><br>
+            <a href="#"><span><i class="material-icons">info</i><span class="icon-text">&nbsp;&nbsp;&nbsp;&nbsp;about</span></a><br>    {% endcomment %}
         </div>
         <script type="text/javascript" src="{% static 'js/profile.js'%}"></script>
     </body>
