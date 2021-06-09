@@ -119,3 +119,74 @@ body{
     transition: 0.5s;
     display: block;
 }
+
+.side-bar-icons {   
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, 50%);
+    height: 100%;
+    width: 75%;
+    position: absolute;
+    display: grid;
+}
+
+/* home icon*/
+.home { 
+    margin-top: 10vh;
+    width: 4vw;
+    height: 8vh;
+    text-align: center;
+}
+
+.home-cover{
+    width: 4vw;
+    height: 8vh;
+    background: black;
+    border-radius: 50%;
+    display: flex;
+}
+
+.home a{
+    color: white;
+    font-family: fontName;
+    font-size: 2vw;
+    font-weight: 100;
+    display: none;
+    position: relative;
+    bottom: 70%;
+    left: 120%;
+    text-decoration: none;
+    animation: slide 1s linear;
+}
+
+.home-cover img {
+    max-width: 3vw;
+    max-height: 6vh;
+    width: 3vw;
+    height: 6vh;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%,-50%);
+    position: relative;
+    animation: rotate 2s linear;
+}
+
+@keyframes slide {
+    0%{
+        left: 50%;
+        opacity: .5;
+    }  
+    30%{
+        left: 120%;
+        opacity: 1;
+    }
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotate(180deg);
+    }  
+    30%{
+        transform: rotate(360deg);
+    }
+}

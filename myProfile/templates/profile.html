@@ -80,8 +80,14 @@
             </div>
         </div>
         <div class='side-bar' id='sideBar' onmouseover='toggleSidebar()' onmouseout='toggleSidebar()'>
-            {% comment %} <a href="#"><span><i class="material-icons">info</i><span class="icon-text">&nbsp;&nbsp;&nbsp;&nbsp;about</span></a><br>
-            <a href="#"><span><i class="material-icons">info</i><span class="icon-text">&nbsp;&nbsp;&nbsp;&nbsp;about</span></a><br>    {% endcomment %}
+            <div class='side-bar-icons'>
+                <div class='home'>
+                        <div class='home-cover'>
+                            <img src="{% static 'img/icons/home-7-64.ico' %}">
+                        </div>
+                    <a href="#" id='home-icon'>Home</a>
+                </div>           
+            </div>
         </div>
         <script type="text/javascript" src="{% static 'js/profile.js'%}"></script>
     </body>

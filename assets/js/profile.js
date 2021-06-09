@@ -20,10 +20,12 @@ function changeBG() {
 
 function toggleSidebar() {
     if (toggle){
-        document.getElementById("sideBar").style.width = "10vw";
+        document.getElementById("sideBar").style.width = "13vw";
+        document.getElementById("home-icon").style.display = "block";
         this.toggle = false;
     } else {
         document.getElementById("sideBar").style.width = "5vw";
+        document.getElementById("home-icon").style.display = "none";
         this.toggle = true;
     }
 }
